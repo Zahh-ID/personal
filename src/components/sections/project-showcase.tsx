@@ -13,7 +13,7 @@ export const ProjectShowcase = () => {
   ];
 
   return (
-    <Section className="min-h-screen py-24 bg-black overflow-hidden relative border-t border-white/5">
+    <Section id="work" className="min-h-screen py-24 bg-black overflow-hidden relative border-t border-white/5">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <FadeIn direction="left">

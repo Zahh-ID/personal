@@ -18,7 +18,7 @@ function App() {
       <HeroScrollyTelling />
       
       <div className="relative z-10 bg-black -mt-[100vh] rounded-t-3xl border-t border-white/10 overflow-hidden">
-        <Section className="py-24 md:py-48 flex justify-center">
+        <Section id="about" className="py-24 md:py-48 flex justify-center">
             <TextReveal 
                 className="max-w-4xl text-center"
                 value="I design and build Web3 systems where architecture, performance, and security matter. Every decision is intentional. Every system is built to hold under real-world constraints." 

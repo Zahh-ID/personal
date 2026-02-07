@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export const CTA = () => {
     return (
-        <Section className="min-h-screen flex items-center justify-center bg-emerald-500 relative overflow-hidden">
+        <Section id="contact" className="min-h-screen flex items-center justify-center bg-emerald-500 relative overflow-hidden">
             {/* Animated Background Pattern */}
              <div className="absolute inset-0 z-0 opacity-10">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-black/50 via-transparent to-transparent animate-pulse" />

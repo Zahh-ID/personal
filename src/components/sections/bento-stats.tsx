@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 export const BentoStats = () => {
     return (
-        <section className="py-24 px-6 md:px-12 bg-black">
+        <section id="services" className="py-24 px-6 md:px-12 bg-black">
              <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                   {/* Left Main Card */}
                   <div className="md:col-span-2 bg-zinc-900 rounded-3xl p-8 md:p-12 relative overflow-hidden min-h-[440px] flex flex-col justify-end group border border-white/5">

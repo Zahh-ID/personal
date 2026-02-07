@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://zahh.dev",
+  "homepage": "https://syzzhd.web.id",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

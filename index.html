@@ -11,12 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>0xZahh</title>
     <script>
-      // SPA redirect handler for GitHub Pages
       (function(){
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect);
+        if (redirect) {
+          var url = new URL(redirect);
+          if (url.pathname !== '/') {
+            history.replaceState(null, null, url.pathname + url.search + url.hash);
+          }
         }
       })();
     </script>

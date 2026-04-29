@@ -4,6 +4,7 @@ import { Preloader } from "./components/layout/preloader";
 import { FullscreenMenu } from "./components/layout/fullscreen-menu";
 import { CTA } from "./components/sections/cta";
 import { Footer } from "./components/layout/footer";
+import { ScrollToTop } from "./components/layout/scroll-to-top";
 import { HomePage } from "./pages/home";
 import { WorkPage } from "./pages/work";
 import { AboutPage } from "./pages/about";
@@ -15,6 +16,7 @@ function App() {
       <SmoothScroll>
         <Preloader />
         <FullscreenMenu />
+        <ScrollToTop />
 
         <Routes>
           <Route path="/" element={<HomePage />} />

@@ -4,15 +4,20 @@ import { useEffect, useState } from "react";
 import { Logo } from "../ui/logo";
 
 export const Preloader = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(() => {
+    if (sessionStorage.getItem("preloader-shown")) return false;
+    return true;
+  });
 
   useEffect(() => {
+    if (!isLoading) return;
     const timer = setTimeout(() => {
+      sessionStorage.setItem("preloader-shown", "1");
       setIsLoading(false);
     }, 2500);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [isLoading]);
 
   const slideUp = {
     initial: { top: 0 },

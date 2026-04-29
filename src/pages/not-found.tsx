@@ -6,7 +6,7 @@ export const NotFoundPage = () => {
   return (
     <div className="min-h-screen flex items-center">
       <Section>
-        <p className="text-pink font-mono text-6xl sm:text-8xl md:text-9xl font-bold mb-4">404</p>
+        <img src="/404.svg" alt="404" className="h-24 sm:h-32 md:h-44 mb-8" />
         <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-ink tracking-tighter mb-6">
           Page not found
         </h1>

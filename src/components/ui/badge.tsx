@@ -10,7 +10,7 @@ export const Badge = ({
   return (
     <span
       className={cn(
-        "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-zinc-800 text-zinc-300 border border-zinc-700/50",
+        "inline-flex items-center px-3 py-1 rounded-[var(--radius-pill)] text-xs font-medium bg-pink/10 text-pink border border-pink/20",
         className
       )}
     >

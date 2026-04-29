@@ -3,8 +3,8 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 interface TextRevealProps {
-    value: string;
-    className?: string;
+  value: string;
+  className?: string;
 }
 
 export const TextReveal = ({ value, className }: TextRevealProps) => {
@@ -18,7 +18,7 @@ export const TextReveal = ({ value, className }: TextRevealProps) => {
 
   return (
     <p
-      className={`relative flex flex-wrap text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white/20 ${className}`}
+      className={`relative flex flex-wrap text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-ink/15 ${className}`}
       ref={element}
     >
       {words.map((word, i) => {
@@ -38,8 +38,8 @@ const Word = ({ children, range, progress }: any) => {
   const opacity = useTransform(progress, range, [0, 1]);
   return (
     <span className="relative mr-3 mt-3">
-      <span className="absolute opacity-20">{children}</span>
-      <motion.span style={{ opacity: opacity }} className="text-white">
+      <span className="absolute opacity-15">{children}</span>
+      <motion.span style={{ opacity: opacity }} className="text-ink">
         {children}
       </motion.span>
     </span>

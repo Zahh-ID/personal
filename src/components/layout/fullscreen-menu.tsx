@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { ArrowDownRight } from "lucide-react";
 import { Logo } from "../ui/logo";
 
 const links = [
@@ -76,9 +77,16 @@ export const FullscreenMenu = () => {
       <div className="pointer-events-auto relative z-[101]">
         <button
           onClick={() => setOpen(!open)}
-          className={`flex items-center gap-2 text-sm font-medium uppercase tracking-widest hover:opacity-70 transition-all duration-300 ${open ? "text-ink" : inverted ? "text-white" : "text-ink"}`}
+          className="flex h-10 items-center gap-2 whitespace-nowrap rounded-[var(--radius-pill)] px-5 text-sm font-semibold uppercase tracking-widest transition-all duration-300 bg-white text-black hover:bg-black hover:text-white"
         >
           {open ? "Close" : "Menu"}
+          <motion.span
+            animate={{ rotate: open ? -180 : 0 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="flex items-center"
+          >
+            <ArrowDownRight size={16} strokeWidth={2.5} />
+          </motion.span>
         </button>
       </div>
 
